@@ -1,0 +1,104 @@
+{
+  "train0": {
+    "cutoff": 22371205,
+    "rows": 420780,
+    "rows_per_user": 420.78,
+    "positives": 29426,
+    "targets": 63497,
+    "candidate_recall_micro": 0.46342346882529883,
+    "users_with_targets": 705,
+    "source_hits": {
+      "src_history": 27538,
+      "src_recent": 8605,
+      "src_artist": 443,
+      "src_popular": 2166
+    },
+    "wall_seconds": 2.327,
+    "peak_rss_gib": 1.961
+  },
+  "train1": {
+    "cutoff": 22976005,
+    "rows": 423796,
+    "rows_per_user": 423.796,
+    "positives": 28750,
+    "targets": 62980,
+    "candidate_recall_micro": 0.45649412511908544,
+    "users_with_targets": 707,
+    "source_hits": {
+      "src_history": 27034,
+      "src_recent": 8841,
+      "src_artist": 465,
+      "src_popular": 2020
+    },
+    "wall_seconds": 1.615,
+    "peak_rss_gib": 2.072
+  },
+  "train2": {
+    "cutoff": 23580805,
+    "rows": 427619,
+    "rows_per_user": 427.619,
+    "positives": 28393,
+    "targets": 63804,
+    "candidate_recall_micro": 0.4450034480596828,
+    "users_with_targets": 714,
+    "source_hits": {
+      "src_history": 26599,
+      "src_recent": 8368,
+      "src_artist": 428,
+      "src_popular": 2024
+    },
+    "wall_seconds": 1.777,
+    "peak_rss_gib": 2.149
+  },
+  "dev": {
+    "cutoff": 24185605,
+    "rows": 431529,
+    "rows_per_user": 431.529,
+    "positives": 28899,
+    "targets": 65943,
+    "candidate_recall_micro": 0.43824211819298486,
+    "users_with_targets": 724,
+    "source_hits": {
+      "src_history": 26960,
+      "src_recent": 8679,
+      "src_artist": 440,
+      "src_popular": 2213
+    },
+    "wall_seconds": 1.639,
+    "peak_rss_gib": 2.149
+  },
+  "selection": {
+    "cutoff": 24790405,
+    "rows": 435685,
+    "rows_per_user": 435.685,
+    "positives": 30138,
+    "targets": 71172,
+    "candidate_recall_micro": 0.4234530433316473,
+    "users_with_targets": 794,
+    "source_hits": {
+      "src_history": 28018,
+      "src_recent": 9468,
+      "src_artist": 415,
+      "src_popular": 2169
+    },
+    "wall_seconds": 1.677,
+    "peak_rss_gib": 2.202
+  },
+  "test": {
+    "cutoff": 25395205,
+    "rows": 439941,
+    "rows_per_user": 439.941,
+    "positives": 29291,
+    "targets": 69761,
+    "candidate_recall_micro": 0.4198764352575221,
+    "users_with_targets": 754,
+    "source_hits": {
+      "src_history": 27381,
+      "src_recent": 8402,
+      "src_artist": 379,
+      "src_popular": 2056
+    },
+    "wall_seconds": 2.067,
+    "peak_rss_gib": 2.251
+  }
+}

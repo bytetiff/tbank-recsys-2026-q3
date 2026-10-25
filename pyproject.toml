@@ -1,0 +1,19 @@
+[project]
+name = "tlab-recsys"
+version = "0.1.0"
+description = "Reproducible temporal feature comparison on KION and Yambda"
+requires-python = ">=3.11,<3.14"
+dependencies = ["catboost>=1.2.8,<2", "numpy>=2,<3", "pandas>=2.2,<3", "polars>=1.30,<2", "pyarrow>=20,<24", "scikit-learn>=1.6,<2", "psutil>=7,<8"]
+
+[project.scripts]
+tlab-recsys = "tlab_recsys.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<10"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

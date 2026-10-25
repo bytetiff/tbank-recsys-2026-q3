@@ -1,0 +1,8 @@
+k 20 0.37682974475580416 {'wall_seconds': 24.673, 'peak_rss_gib': 2.149}
+k 40 0.4059409486019104 {'wall_seconds': 83.899, 'peak_rss_gib': 2.111}
+k 70 0.4068978387360272 {'wall_seconds': 138.058, 'peak_rss_gib': 2.615}
+k 120 0.41941976006907344 {'wall_seconds': 136.085, 'peak_rss_gib': 3.098}
+manual 0.4182590022962998
+old_manual 0.37638223657460396
+select done {'wall_seconds': 619.698, 'peak_rss_gib': 5.476}
+EXIT 0

@@ -1,0 +1,334 @@
+{
+  "test_table_markdown": "| Вариант | Признаков | NDCG@10 | Recall@10 | Recall@100 | ROC-AUC | LogLoss | Δ NDCG@10 к strong manual [95% CI] | Обучение, с | Итераций |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Popular (7 дней) | — | 0.0589 ± 0.0000 | 0.0136 | 0.0523 | 0.4841 | — | -0.3655 [-0.3917; -0.3397] | — | — |\n| History count (90 дней) | — | 0.3088 ± 0.0000 | 0.0703 | 0.2643 | 0.8372 | — | -0.1156 [-0.1326; -0.0986] | — | — |\n| Old manual (прежний пайплайн) | 38 | 0.3792 ± 0.0029 | 0.0859 | 0.2766 | 0.8351 | 0.1909 | -0.0452 [-0.0561; -0.0343] | 96 | 34 |\n| Strong manual | 59 | 0.4244 ± 0.0003 | 0.0965 | 0.3101 | 0.8714 | 0.1759 | 0 (опора) | 78 | 407 |\n| Auto-grammar | 124 | 0.4246 ± 0.0006 | 0.0951 | 0.3045 | 0.8687 | 0.1764 | +0.0002 [-0.0079; +0.0082] | 130 | 421 |\n| Auto + manual | 165 | 0.4413 ± 0.0009 | 0.0998 | 0.3149 | 0.8727 | 0.1746 | +0.0170 [+0.0100; +0.0239] | 199 | 587 |",
+  "contrasts": {
+    "old_manual-manual": {
+      "mean": -0.04515298481424939,
+      "ci95": [
+        -0.05611525933017496,
+        -0.034284925663309124
+      ],
+      "users": 754,
+      "samples": 2000,
+      "seed": 2718
+    },
+    "auto-manual": {
+      "mean": 0.00020402444105715686,
+      "ci95": [
+        -0.007861306209820139,
+        0.008171679686862462
+      ],
+      "users": 754,
+      "samples": 2000,
+      "seed": 2718
+    },
+    "auto_manual-manual": {
+      "mean": 0.01695339360215405,
+      "ci95": [
+        0.010039417026890086,
+        0.02386536097517476
+      ],
+      "users": 754,
+      "samples": 2000,
+      "seed": 2718
+    },
+    "popular-manual": {
+      "mean": -0.36547289750576595,
+      "ci95": [
+        -0.3917235509118401,
+        -0.3396869530497105
+      ],
+      "users": 754,
+      "samples": 2000,
+      "seed": 2718
+    },
+    "history_count-manual": {
+      "mean": -0.11561427049634217,
+      "ci95": [
+        -0.13256830242473266,
+        -0.09862046504172686
+      ],
+      "users": 754,
+      "samples": 2000,
+      "seed": 2718
+    }
+  },
+  "k_trace": [
+    {
+      "k": 20,
+      "selection_ndcg_10": 0.37682974475580416,
+      "fit_seconds": 24.673
+    },
+    {
+      "k": 40,
+      "selection_ndcg_10": 0.4059409486019104,
+      "fit_seconds": 83.899
+    },
+    {
+      "k": 70,
+      "selection_ndcg_10": 0.4068978387360272,
+      "fit_seconds": 138.058
+    },
+    {
+      "k": 120,
+      "selection_ndcg_10": 0.41941976006907344,
+      "fit_seconds": 136.085
+    }
+  ],
+  "reference_on_selection": {
+    "manual": 0.4182590022962998,
+    "old_manual": 0.37638223657460396
+  },
+  "auto_importance_by_axis": {
+    "key": {
+      "user": 50.85435699138666,
+      "user_item": 36.52905679422021,
+      "user_artist": 5.162135442532008,
+      "user_album": 4.164848423247747,
+      "item": 1.9464825111020734,
+      "(флаги источников)": 1.3431198375113076
+    },
+    "filt": {
+      "full": 40.1273263801429,
+      "listen": 27.655816729926013,
+      "all": 13.713402356008523,
+      "organic": 7.342940551916722,
+      "like": 4.302335177523472,
+      "skip": 3.873768130272548,
+      "dislike": 1.6412908366985057
+    },
+    "window": {
+      "all": 24.459022139173822,
+      "90": 21.62271442806669,
+      "30": 18.103407316980977,
+      "14": 11.394289556290827,
+      "7": 10.576044417653153,
+      "3": 6.6192455325071755,
+      "1": 5.882156771816029
+    },
+    "agg": {
+      "count": 36.62124123413446,
+      "recency": 29.28362908086137,
+      "nuniq": 9.7698436500146,
+      "ratio_full": 7.2441094549469645,
+      "share": 4.602114650484439,
+      "ratio_like": 4.176690533457238,
+      "mean_ratio": 3.759997240331807,
+      "ratio_skip": 3.1992543182577973
+    }
+  },
+  "manual_importance_by_group": {
+    "user": 41.056053317525944,
+    "user_item": 31.900541006203856,
+    "доп. ручные (x_*)": 12.371010819393174,
+    "user_artist": 6.242317206891051,
+    "user_album": 3.6678899547482735,
+    "item": 3.4850793061495047,
+    "artist": 0.7463930739109899,
+    "флаги источников": 0.4547773560989037,
+    "album": 0.07593795907830388
+  },
+  "auto_chosen_k": 120,
+  "auto_overlap_with_manual": [
+    "item__full__7d__count",
+    "user__full__30d__count",
+    "user__full__30d__nuniq",
+    "user__listen__30d__count",
+    "user__listen__all__count",
+    "user__listen__all__recency",
+    "user_artist__full__30d__count",
+    "user_item__full__30d__count",
+    "user_item__full__30d__share",
+    "user_item__full__all__count",
+    "user_item__full__all__recency",
+    "user_item__listen__all__mean_ratio",
+    "user_item__listen__all__ratio_full",
+    "user_item__listen__all__recency"
+  ],
+  "auto_window_counts": {
+    "1": 8,
+    "3": 11,
+    "7": 17,
+    "14": 17,
+    "30": 22,
+    "90": 19,
+    "None": 26
+  },
+  "auto_key_counts": {
+    "item": 3,
+    "user": 63,
+    "user_album": 9,
+    "user_artist": 11,
+    "user_item": 34
+  },
+  "screen": {
+    "grammar_size": 938,
+    "nonzero_importance": 240,
+    "best_iteration": 99,
+    "feature_resources": {
+      "wall_seconds": 43.607,
+      "peak_rss_gib": 3.281
+    },
+    "fit_resources": {
+      "wall_seconds": 86.928,
+      "peak_rss_gib": 4.823
+    }
+  },
+  "slices": {
+    "train0": {
+      "cutoff": 22371205,
+      "rows": 420780,
+      "rows_per_user": 420.78,
+      "positives": 29426,
+      "targets": 63497,
+      "candidate_recall_micro": 0.46342346882529883,
+      "users_with_targets": 705,
+      "source_hits": {
+        "src_history": 27538,
+        "src_recent": 8605,
+        "src_artist": 443,
+        "src_popular": 2166
+      },
+      "wall_seconds": 2.327,
+      "peak_rss_gib": 1.961
+    },
+    "train1": {
+      "cutoff": 22976005,
+      "rows": 423796,
+      "rows_per_user": 423.796,
+      "positives": 28750,
+      "targets": 62980,
+      "candidate_recall_micro": 0.45649412511908544,
+      "users_with_targets": 707,
+      "source_hits": {
+        "src_history": 27034,
+        "src_recent": 8841,
+        "src_artist": 465,
+        "src_popular": 2020
+      },
+      "wall_seconds": 1.615,
+      "peak_rss_gib": 2.072
+    },
+    "train2": {
+      "cutoff": 23580805,
+      "rows": 427619,
+      "rows_per_user": 427.619,
+      "positives": 28393,
+      "targets": 63804,
+      "candidate_recall_micro": 0.4450034480596828,
+      "users_with_targets": 714,
+      "source_hits": {
+        "src_history": 26599,
+        "src_recent": 8368,
+        "src_artist": 428,
+        "src_popular": 2024
+      },
+      "wall_seconds": 1.777,
+      "peak_rss_gib": 2.149
+    },
+    "dev": {
+      "cutoff": 24185605,
+      "rows": 431529,
+      "rows_per_user": 431.529,
+      "positives": 28899,
+      "targets": 65943,
+      "candidate_recall_micro": 0.43824211819298486,
+      "users_with_targets": 724,
+      "source_hits": {
+        "src_history": 26960,
+        "src_recent": 8679,
+        "src_artist": 440,
+        "src_popular": 2213
+      },
+      "wall_seconds": 1.639,
+      "peak_rss_gib": 2.149
+    },
+    "selection": {
+      "cutoff": 24790405,
+      "rows": 435685,
+      "rows_per_user": 435.685,
+      "positives": 30138,
+      "targets": 71172,
+      "candidate_recall_micro": 0.4234530433316473,
+      "users_with_targets": 794,
+      "source_hits": {
+        "src_history": 28018,
+        "src_recent": 9468,
+        "src_artist": 415,
+        "src_popular": 2169
+      },
+      "wall_seconds": 1.677,
+      "peak_rss_gib": 2.202
+    },
+    "test": {
+      "cutoff": 25395205,
+      "rows": 439941,
+      "rows_per_user": 439.941,
+      "positives": 29291,
+      "targets": 69761,
+      "candidate_recall_micro": 0.4198764352575221,
+      "users_with_targets": 754,
+      "source_hits": {
+        "src_history": 27381,
+        "src_recent": 8402,
+        "src_artist": 379,
+        "src_popular": 2056
+      },
+      "wall_seconds": 2.067,
+      "peak_rss_gib": 2.251
+    }
+  },
+  "stage_resources": {
+    "slices": {
+      "wall_seconds": 28.772,
+      "peak_rss_gib": 2.244,
+      "finished_unix": 1792924340
+    },
+    "features": {
+      "wall_seconds": 33.514,
+      "peak_rss_gib": 2.112,
+      "finished_unix": 1792924381
+    },
+    "screen": {
+      "wall_seconds": 131.6,
+      "peak_rss_gib": 4.823,
+      "finished_unix": 1792924687
+    },
+    "select": {
+      "wall_seconds": 619.698,
+      "peak_rss_gib": 5.476,
+      "finished_unix": 1792925322
+    },
+    "final": {
+      "wall_seconds": 1646.807,
+      "peak_rss_gib": 5.849,
+      "finished_unix": 1792931800
+    },
+    "tune": {
+      "wall_seconds": 2236.467,
+      "peak_rss_gib": 4.941,
+      "finished_unix": 1792930152
+    }
+  },
+  "top_auto_features": [
+    "user_item__full__90d__count",
+    "user_item__full__30d__count",
+    "user_item__full__all__share",
+    "user_item__all__90d__count",
+    "user_item__all__30d__recency",
+    "user__listen__90d__count",
+    "user__full__7d__nuniq",
+    "user_item__full__30d__recency",
+    "user_item__listen__14d__mean_ratio",
+    "user_item__all__90d__recency",
+    "user_artist__listen__14d__ratio_skip",
+    "user_item__full__90d__recency",
+    "user__full__3d__nuniq",
+    "user_item__listen__90d__mean_ratio",
+    "user__listen__3d__mean_ratio",
+    "user_item__all__all__count",
+    "user__skip__all__count",
+    "user_item__full__all__count",
+    "user__all__1d__recency",
+    "user_item__listen__all__mean_ratio"
+  ]
+}

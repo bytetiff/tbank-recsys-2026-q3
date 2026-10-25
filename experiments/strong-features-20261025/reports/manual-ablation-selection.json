@@ -1,0 +1,44 @@
+{
+  "none": {
+    "columns": 59,
+    "selection_ndcg_10": 0.4182590022962998,
+    "roc_auc": 0.8643115685735855,
+    "wall_seconds": 76.092,
+    "peak_rss_gib": 1.416
+  },
+  "extras": {
+    "columns": 52,
+    "selection_ndcg_10": 0.40332638264770154,
+    "roc_auc": 0.8603916310741297,
+    "wall_seconds": 53.217,
+    "peak_rss_gib": 1.633
+  },
+  "indirect": {
+    "columns": 43,
+    "selection_ndcg_10": 0.41767360906392026,
+    "roc_auc": 0.8618323702757826,
+    "wall_seconds": 59.755,
+    "peak_rss_gib": 1.723
+  },
+  "event_types": {
+    "columns": 47,
+    "selection_ndcg_10": 0.41777389309141144,
+    "roc_auc": 0.862758853921533,
+    "wall_seconds": 50.746,
+    "peak_rss_gib": 1.823
+  },
+  "ratios_and_shares": {
+    "columns": 49,
+    "selection_ndcg_10": 0.41591332067795295,
+    "roc_auc": 0.864039691964672,
+    "wall_seconds": 70.684,
+    "peak_rss_gib": 1.848
+  },
+  "source_flags": {
+    "columns": 55,
+    "selection_ndcg_10": 0.4158145418539193,
+    "roc_auc": 0.8651928104821113,
+    "wall_seconds": 64.97,
+    "peak_rss_gib": 1.906
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "prepared_events_sha256": "13f49a5197c08411eab5d47c082a4cc1f645bc654175e356d551b2fa3a2c444e",
+  "artist_map_sha256": "cf1110aa2413ed70008ec9232d395660b2181ffda731002fb74da54e87b6f25d",
+  "album_map_sha256": "559b6576063d96280414574b32292eee7b47ee0b9f2952cb3ae670a5d19125e4",
+  "events": 5040719,
+  "users": 1000,
+  "items": 278889
+}

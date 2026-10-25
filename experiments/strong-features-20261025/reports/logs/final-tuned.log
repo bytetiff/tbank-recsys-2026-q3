@@ -1,0 +1,14 @@
+old_manual 17 0.38162005525100645 {'wall_seconds': 107.769, 'peak_rss_gib': 4.229}
+old_manual 29 0.3818266542948227 {'wall_seconds': 110.598, 'peak_rss_gib': 5.857}
+old_manual 43 0.3788934178118961 {'wall_seconds': 106.02, 'peak_rss_gib': 5.231}
+manual 17 0.42632826937360296 {'wall_seconds': 127.298, 'peak_rss_gib': 4.189}
+manual 29 0.42217724817441915 {'wall_seconds': 78.437, 'peak_rss_gib': 3.187}
+manual 43 0.42478972399496434 {'wall_seconds': 91.774, 'peak_rss_gib': 2.461}
+auto 17 0.4224846050827342 {'wall_seconds': 208.756, 'peak_rss_gib': 3.688}
+auto 29 0.42648097406328583 {'wall_seconds': 201.851, 'peak_rss_gib': 3.776}
+auto 43 0.42936515124177754 {'wall_seconds': 226.279, 'peak_rss_gib': 3.802}
+auto_manual 17 0.4376779765586923 {'wall_seconds': 124.439, 'peak_rss_gib': 4.516}
+auto_manual 29 0.43684560203955314 {'wall_seconds': 143.029, 'peak_rss_gib': 4.582}
+auto_manual 43 0.4379440922436737 {'wall_seconds': 110.541, 'peak_rss_gib': 4.597}
+final done {'wall_seconds': 1646.807, 'peak_rss_gib': 5.849}
+EXIT 0

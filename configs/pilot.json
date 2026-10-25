@@ -1,0 +1,18 @@
+{
+  "cohort_size": 100,
+  "cohort_seed": 1729,
+  "model_seeds": [17],
+  "horizon_days": 7,
+  "manual_windows_days": [7, 30, null],
+  "generated_windows_days": [1, 3, 7, 10, 14, 30, 60, 90, null],
+  "popular_candidates": 1000,
+  "recent_candidates": 200,
+  "full_catalog_users": 100,
+  "metadata_mode": "none",
+  "missing_recency_seconds": 0,
+  "target_played_ratio_gt": 50,
+  "search": {"max_fits": 24, "max_groups": 4, "min_improvement": 0.0001},
+  "catboost": {"depth": [4, 6], "learning_rate": [0.05, 0.1], "l2_leaf_reg": [3, 10], "max_iterations": 500, "early_stopping_rounds": 50, "thread_count": 8},
+  "bootstrap": {"samples": 2000, "seed": 2718},
+  "ablation_manual_selected": true
+}

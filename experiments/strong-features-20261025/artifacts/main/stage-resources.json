@@ -1,0 +1,32 @@
+{
+  "slices": {
+    "wall_seconds": 28.772,
+    "peak_rss_gib": 2.244,
+    "finished_unix": 1792924340
+  },
+  "features": {
+    "wall_seconds": 33.514,
+    "peak_rss_gib": 2.112,
+    "finished_unix": 1792924381
+  },
+  "screen": {
+    "wall_seconds": 131.6,
+    "peak_rss_gib": 4.823,
+    "finished_unix": 1792924687
+  },
+  "select": {
+    "wall_seconds": 619.698,
+    "peak_rss_gib": 5.476,
+    "finished_unix": 1792925322
+  },
+  "final": {
+    "wall_seconds": 1646.807,
+    "peak_rss_gib": 5.849,
+    "finished_unix": 1792931800
+  },
+  "tune": {
+    "wall_seconds": 2236.467,
+    "peak_rss_gib": 4.941,
+    "finished_unix": 1792930152
+  }
+}

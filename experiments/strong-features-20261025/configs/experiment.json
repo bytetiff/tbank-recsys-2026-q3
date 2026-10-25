@@ -1,0 +1,53 @@
+{
+  "prepared_events": "data/data_yambda/prepared/v3-cdccb08e18ba2dd3aff50e6f8299ee589c77193ce702396369d172a3f7f18184-160db9563aa2-a59fd6c6a361/events.parquet",
+  "raw_events": "data/data_yambda/raw/flat/50m/multi_event.parquet",
+  "artist_map": "data/data_yambda/raw/meta/artist_item_mapping.parquet",
+  "album_map": "data/data_yambda/raw/meta/album_item_mapping.parquet",
+  "end_exclusive": 26000005,
+  "candidates": {
+    "history": 400,
+    "recent": 100,
+    "artist": 50,
+    "popular": 100
+  },
+  "catboost": {
+    "iterations": 2000,
+    "learning_rate": 0.08,
+    "depth": 6,
+    "l2_leaf_reg": 3,
+    "early_stopping_rounds": 100,
+    "thread_count": 4
+  },
+  "search": {
+    "screen_users": 300,
+    "screen_seed": 7,
+    "screen_iterations": 400,
+    "dedup_corr": 0.98,
+    "k_grid": [
+      20,
+      40,
+      70,
+      120
+    ]
+  },
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "selection_seed": 17,
+  "bootstrap": {
+    "samples": 2000,
+    "seed": 2718
+  },
+  "tuning": {
+    "depth": [
+      6,
+      8
+    ],
+    "learning_rate": [
+      0.05,
+      0.1
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+screen done 938 120 {'wall_seconds': 43.607, 'peak_rss_gib': 3.281} {'wall_seconds': 86.928, 'peak_rss_gib': 4.823}
+screen done {'wall_seconds': 131.6, 'peak_rss_gib': 4.823}
+EXIT 0

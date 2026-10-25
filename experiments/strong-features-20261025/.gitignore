@@ -1,0 +1,4 @@
+artifacts/main/features/
+artifacts/main/*.parquet
+artifacts/main/screen-model.cbm
+__pycache__/
